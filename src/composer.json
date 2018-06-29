@@ -1,0 +1,27 @@
+{
+    "name": "bnmosria/zendsearch",
+    "description": "A general purpose text search engine written entirely in PHP 5. Cloned from zendframework/ZendSearch.",
+    "type": "library",
+    "license": "BSD-3-Clause",
+    "keywords": [
+        "zf2",
+        "lucene"
+    ],
+    "homepage": "http://packages.zendframework.com/",
+    "autoload": {
+
+        "psr-4": {
+            "ZendSearch\\": "src/ZendSearch/"
+        }
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "http://packages.zendframework.com/"
+        }
+    ],
+    "require": {
+        "php": "^5.6 || ^7.0",
+        "zendframework/zend-stdlib": "3.2.*"
+    }
+}
