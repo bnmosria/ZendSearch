@@ -110,7 +110,7 @@ class Filesystem extends AbstractFile
     public function close()
     {
         if ($this->_fileHandle !== null ) {
-            ErrorHandle::start(E_WARNING);
+            ErrorHandler::start(E_WARNING);
             fclose($this->_fileHandle);
             ErrorHandler::stop();
             $this->_fileHandle = null;
