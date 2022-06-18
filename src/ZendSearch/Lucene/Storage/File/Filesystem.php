@@ -11,7 +11,7 @@
 namespace ZendSearch\Lucene\Storage\File;
 
 use ZendSearch\Lucene;
-use Zend\Stdlib\ErrorHandler;
+use Laminas\Stdlib\ErrorHandler;
 
 /**
  * @category   Zend
@@ -110,7 +110,7 @@ class Filesystem extends AbstractFile
     public function close()
     {
         if ($this->_fileHandle !== null ) {
-            ErrorHandler::start(E_WARNING);
+            ErrorHandle::start(E_WARNING);
             fclose($this->_fileHandle);
             ErrorHandler::stop();
             $this->_fileHandle = null;
